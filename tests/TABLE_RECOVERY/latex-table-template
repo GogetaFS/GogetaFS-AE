@@ -1,0 +1,19 @@
+\begin{table}[t]
+	\centering
+	\small
+	\begin{tabular}{c|c|r|r|r|r|r}
+		\textbf{System} & \textbf{Metric}                      & \textbf{FIO} & \textbf{CP} & \textbf{HM} & \textbf{MA} & \textbf{VM} \\\hline\hline
+		NOVA            & \multirow{3}{*}{\makecell[c]{Umount \\ Time (s)}} & {NOVA-UMOUNT-FIO} & {NOVA-UMOUNT-CP} & {NOVA-UMOUNT-HM} & {NOVA-UMOUNT-MA} & {NOVA-UMOUNT-VM} \\
+		LD              &                                      & {Light-Dedup-UMOUNT-FIO} & {Light-Dedup-UMOUNT-CP} & {Light-Dedup-UMOUNT-HM} & {Light-Dedup-UMOUNT-MA} & {Light-Dedup-UMOUNT-VM} \\
+		FDM             &                                      & {FDM-UMOUNT-FIO} & {FDM-UMOUNT-CP} & {FDM-UMOUNT-HM} & {FDM-UMOUNT-MA} & {FDM-UMOUNT-VM} \\\hline
+		NOVA            & \multirow{3}{*}{\makecell[c]{Normal \\ Recovery \\ Time (s)}} & {NOVA-NORMAL-FIO} & {NOVA-NORMAL-CP} & {NOVA-NORMAL-HM} & {NOVA-NORMAL-MA} & {NOVA-NORMAL-VM} \\
+		LD              &                                      & {Light-Dedup-NORMAL-FIO} & {Light-Dedup-NORMAL-CP} & {Light-Dedup-NORMAL-HM} & {Light-Dedup-NORMAL-MA} & {Light-Dedup-NORMAL-VM} \\
+		FDM             &                                      & {FDM-NORMAL-FIO} & {FDM-NORMAL-CP} & {FDM-NORMAL-HM} & {FDM-NORMAL-MA} & {FDM-NORMAL-VM} \\\hline
+		NOVA            & \multirow{3}{*}{\makecell[c]{Failure \\ Recovery \\ Time (s)}}            & {NOVA-FAIL-FIO} & {NOVA-FAIL-CP} & {NOVA-FAIL-HM} & {NOVA-FAIL-MA} & {NOVA-FAIL-VM} \\
+		LD              &                                      & {Light-Dedup-FAIL-FIO} & {Light-Dedup-FAIL-CP} & {Light-Dedup-FAIL-HM} & {Light-Dedup-FAIL-MA} & {Light-Dedup-FAIL-VM} \\
+		FDM             &                                      & {FDM-FAIL-FIO} & {FDM-FAIL-CP} & {FDM-FAIL-HM} & {FDM-FAIL-MA} & {FDM-FAIL-VM} \\
+	\end{tabular}
+	\caption{\textbf{Recovery overheads}. \emph{FIO creates 32~GiB data; HM, MA, and VM are short for Homes, Mails, and WebVMs.}}\label{tab:recovery}
+	% \vspace{-1.5em}
+	\vspace{-1em}
+\end{table}

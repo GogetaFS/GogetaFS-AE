@@ -1,0 +1,12 @@
+\begin{table}[t]
+	\centering
+	\small
+	\begin{tabular}{c|c|c|c|c|c}
+		\textbf{System} & \textbf{Metric}                         & \textbf{RPB} & \textbf{WPB} & \textbf{BW} & \textbf{Lat} \\\hline\hline
+		LD            & \multirow{2}{*}{\makecell[c]{Fresh-}} & 214.9         & 126.7         & 1181.9       & 3305.2        \\
+		FDM             &                                         & 70.7         & 26.7         & 1591.6       & 2454.4        \\
+		LD            & \multirow{2}{*}{\makecell[c]{Aged-}}  & 288.8         & 174.2         & 1124.2       & 3474.8        \\
+		FDM             &                                         & 146.0         & 82.0         & 1298.9       & 3007.3        \\
+	\end{tabular}
+	\vspace{-1em}
+\end{table}

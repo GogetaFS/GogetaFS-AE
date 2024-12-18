@@ -1,0 +1,12 @@
+\begin{table}[t]
+	\centering
+	\small
+	\begin{tabular}{c|c|c|c|c|c}
+		\textbf{System} & \textbf{Metric}                         & \textbf{RPB} & \textbf{WPB} & \textbf{BW} & \textbf{Lat} \\\hline\hline
+		LD            & \multirow{2}{*}{\makecell[c]{Fresh-}} & {REGION-NEW-RPB}         & {REGION-NEW-WPB}         & {REGION-NEW-BW}       & {REGION-NEW-LAT}        \\
+		FDM             &                                         & {ENTRY-NEW-RPB}         & {ENTRY-NEW-WPB}         & {ENTRY-NEW-BW}       & {ENTRY-NEW-LAT}        \\
+		LD            & \multirow{2}{*}{\makecell[c]{Aged-}}  & {REGION-AGE-RPB}         & {REGION-AGE-WPB}         & {REGION-AGE-BW}       & {REGION-AGE-LAT}        \\
+		FDM             &                                         & {ENTRY-AGE-RPB}         & {ENTRY-AGE-WPB}         & {ENTRY-AGE-BW}       & {ENTRY-AGE-LAT}        \\
+	\end{tabular}
+	\vspace{-1em}
+\end{table}

@@ -1,0 +1,19 @@
+\begin{table}[t]
+	\centering
+	\small
+	\begin{tabular}{c|c|r|r|r|r|r}
+		\textbf{System} & \textbf{Metric}                      & \textbf{FIO} & \textbf{CP} & \textbf{HM} & \textbf{MA} & \textbf{VM} \\\hline\hline
+		NOVA            & \multirow{3}{*}{\makecell[c]{Umount \\ Time (s)}} & 0.39 & 0.97 & 0.75 & 0.51 & 0.92 \\
+		LD              &                                      & 0.67 & 1.18 & 0.95 & 0.75 & 1.15 \\
+		FDM             &                                      & 1.16 & 1.52 & 1.11 & 1.12 & 1.22 \\\hline
+		NOVA            & \multirow{3}{*}{\makecell[c]{Normal \\ Recovery \\ Time (s)}} & 0.02 & 0.01 & 0.01 & 0.01 & 0.01 \\
+		LD              &                                      & 0.66 & 0.37 & 0.21 & 0.43 & 0.14 \\
+		FDM             &                                      & 0.69 & 0.42 & 0.23 & 0.49 & 0.17 \\\hline
+		NOVA            & \multirow{3}{*}{\makecell[c]{Failure \\ Recovery \\ Time (s)}}            & 0.47 & 0.34 & 0.78 & 0.57 & 0.89 \\
+		LD              &                                      & 1.88 & 1.28 & 2.37 & 2.0 & 2.9 \\
+		FDM             &                                      & 1.7 & 1.01 & 1.64 & 1.68 & 2.09 \\
+	\end{tabular}
+	\caption{\textbf{Recovery overheads}. \emph{FIO creates 32~GiB data; HM, MA, and VM are short for Homes, Mails, and WebVMs.}}\label{tab:recovery}
+	% \vspace{-1.5em}
+	\vspace{-1em}
+\end{table}
