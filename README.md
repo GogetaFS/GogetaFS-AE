@@ -37,7 +37,7 @@ To reproduce the experiments, the user is required to get the repositories liste
 
 - GogetaFS for PM: [https://github.com/GogetaFS/Light-Dedup-J.git](https://github.com/GogetaFS/Light-Dedup-J.git).
 - GogetaFS for SSD: [https://github.com/GogetaFS/GogetaFS.git](https://github.com/GogetaFS/GogetaFS.git).
-- Evaluation tools and scripts on PM: [https://github.com/GogetaFS/tests.git](https://github.com/GogetaFS/tests.git).
+- Evaluation tools and scripts on PM: [https://github.com/GogetaFS/GogetaFS-AE.git](https://github.com/GogetaFS/GogetaFS-AE.git).
 - Evaluation tools and scripts on SSD: [https://github.com/GogetaFS/GogetaFS-Tests.git](https://github.com/GogetaFS/GogetaFS-Tests.git).
 - NV-Dedup source code: [https://github.com/GogetaFS/nv-dedup.git](https://github.com/GogetaFS/nv-dedup.git).
 - f2fs source code: [https://github.com/GogetaFS/f2fs.git](https://github.com/GogetaFS/f2fs.git).
@@ -47,11 +47,10 @@ You should run the following command to organize them so that the scripts can wo
 ```bash
 #!/bin/bash
 cd <Your directory>
-git clone https://github.com/GogetaFS/tests.git GogetaFS-AE
+git clone https://github.com/GogetaFS/GogetaFS-AE.git
 cd GogetaFS-AE
 
 git clone https://github.com/GogetaFS/Light-Dedup-J.git
-git clone https://github.com/GogetaFS/nvm_tools-J.git
 git clone https://github.com/GogetaFS/nv-dedup.git
 
 mkdir SSD-emu && cd SSD-emu
